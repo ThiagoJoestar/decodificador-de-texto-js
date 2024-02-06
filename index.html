@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Decodificador de Texto</h1>
+    </header>
+
+    <section class="container">
+        <div class="input-container">
+            <h2>Entrada de Texto</h2>
+            <form id="cryptoForm">
+                
+                <input type="text" id="inputText" name="inputText" required size="100">
+                <div class="buttons-container">
+                    <button class="crypto-button" type="button" onclick="criptografar()">Criptografar</button>
+                    <button class="crypto-button" type="button" onclick="descriptografar()">Descriptografar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="output-container">
+            <h2>Texto Encriptado</h2>
+            <p id="outputText"></p>
+            <button id="copiarBotao" onclick="copiarTexto()">Copiar</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Decodificador</p>
+    </footer>
+
+    <script src="criptografia.js"></script>
+</body>
+
+</html>
